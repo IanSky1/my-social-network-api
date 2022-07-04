@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2"
+  },
+  "name": "my-social-network-api",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanSky1/my-social-network-api.git"
+  },
+  "author": "Ian Mohn",
+  "license": "ISC",
+  "bugs": {}
+}
