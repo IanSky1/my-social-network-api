@@ -61,7 +61,17 @@ const userController = {
             {$push: {friends: params.friendsId}},
             {new: true}
         )
-    }
+        .then((dbUserData) => {
+            if (!dbUserData) {
+                res.status(404).json({message: "Sorry, A user with that id has not been found!"});
+                return;
+            }
+            res.json(dbUserData);
+        })
+        .catch(err => res.json(err));
+    },
+
+    removeFriend
 
 }
 
