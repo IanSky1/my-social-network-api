@@ -80,7 +80,7 @@ const userController = {
     removeFriend({params}, res) {
         User.findOneAndUpdate(
             {_id: params.id},
-            {$pull: {friends: params.friendId}},
+            {$pull: {friends: params.friendsId}},
             {new: true}
         )
         .select("-__v")
